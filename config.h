@@ -1,28 +1,25 @@
 #ifndef CONFIG_H
 #define CONFIG_H
 
-// String used to delimit block outputs in the status.
-#define DELIMITER " "
+#define DELIMITER "  " // delimiter between blocks
 
-// Maximum number of Unicode characters that a block can output.
-#define MAX_BLOCK_OUTPUT_LENGTH 45
+#define MAX_BLOCK_OUTPUT_LENGTH 45 // max unicode characters in a block
 
-// Control whether blocks are clickable.
-#define CLICKABLE_BLOCKS 0
+#define CLICKABLE_BLOCKS 0 // clickable blocks
 
-// Control whether a leading delimiter should be prepended to the status.
-#define LEADING_DELIMITER 0
+#define LEADING_DELIMITER 0 // prepend leading delimiters
 
-// Control whether a trailing delimiter should be appended to the status.
-#define TRAILING_DELIMITER 0
+#define TRAILING_DELIMITER 0 // append trailing delimiters
 
-// Define blocks for the status feed as X(icon, cmd, interval, signal).
-#define BLOCKS(X)             \
-  X("", "sb-cpu", 10, 18) \
-  X("", "sb-wifi", 5, 4) \
-	X("", "sb-volume", 10, 10) \
+/* blocks: X(icon, cmd, interval, signal) */
+#define BLOCKS(X) \
+  X("", "sb-record", 0, 9) \
+  X("", "sb-music", 0, 2) \
+  X("", "sb-cpu", 5, 18) \
+  X("", "sb-network", 5, 4) \
+	X("", "sb-volume", 0, 10) \
 	X("", "sb-battery", 5, 3) \
-	X("", "sb-time", 60, 1) \
-	X("", "sb-date", 60, 1)
+	X("", "sb-time", 1, 1) \
+	X("", "sb-date", 1, 1)
 
-#endif  // CONFIG_H
+#endif

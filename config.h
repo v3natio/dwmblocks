@@ -15,9 +15,11 @@
 #define BLOCKS(X) \
   X("", "sb-record", 0, 9) \
   X("", "sb-music", 0, 2) \
+  X("", "sb-torrent", 20, 7) \
   X("", "sb-cpu", 5, 18) \
   X("", "sb-network", 5, 4) \
 	X("", "sb-volume", 0, 10) \
+  X("", "sb-performance", 5, 3) \
 	X("", "sb-battery", 5, 3) \
 	X("", "sb-time", 1, 1) \
 	X("", "sb-date", 1, 1)

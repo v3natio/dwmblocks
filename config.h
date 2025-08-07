@@ -17,6 +17,7 @@
   X("", "sb-music", 0, 2) \
   X("", "sb-torrent", 20, 7) \
   X("", "sb-cpu", 5, 18) \
+  X("", "sb-vpn", 0, 6) \
   X("", "sb-network", 5, 4) \
 	X("", "sb-volume", 0, 10) \
   X("", "sb-performance", 5, 3) \
